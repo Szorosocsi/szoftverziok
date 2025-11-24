@@ -1,0 +1,35 @@
+ /* Csathó Bulcsú, 2025.11.24 20:32, Szoft/IIE */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+th {
+  font-weight: 600;
+  color: #444;
+  border-bottom: 2px solid #dcdcdc;
+  padding-bottom: 8px;
+}
+
+td {
+  padding: 6px 4px;
+  border-bottom: 1px solid #ececec;
+  color: #333;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
+
+span {
+  opacity: 0.4;
+  font-size: 18px;
+}
