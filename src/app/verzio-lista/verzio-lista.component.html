@@ -1,0 +1,29 @@
+<! -- Csathó Bulcsú, 2025.11.24 20:01, Szoft/IIE -->
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Verzió</th>
+      <th>Kiadás dátuma</th>
+      <th>Csapat</th>
+      <th>Hibák</th>
+      <th>Új funkciók</th>
+      <th>Megjegyzés</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let v of verziok">
+      <td>{{ v.verzio }}</td>
+      <td>{{ v.datum }}</td>
+      <td>{{ v.csapat }}</td>
+      <td>{{ v.hibak }}</td>
+      <td>{{ v.ujFunkciok }}</td>
+      <td>
+        <span *ngIf="v.hibak > v.ujFunkciok">⚠️</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Összes hiba:</strong> {{ osszesHiba }}</p>
